@@ -1,8 +1,6 @@
 # Core Pkgs
 import streamlit as st 
 
-import cv2
-
 
 def main():
 	"""Face Detection App"""
