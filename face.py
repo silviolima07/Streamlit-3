@@ -86,7 +86,7 @@ def main():
 			# st.write(type(our_image))
 			st.image(our_image)
 
-'''
+
 
 		enhance_type = st.sidebar.radio("Enhance Type",["Original","Gray-Scale","Contrast","Brightness","Blurring"])
 		if enhance_type == 'Gray-Scale':
@@ -119,7 +119,7 @@ def main():
 		else:
 			st.image(our_image,width=300)
 
-'''
+
 
 		# Face Detection
 		task = ["Faces","Smiles","Eyes","Cannize","Cartonize"]
