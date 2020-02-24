@@ -1,6 +1,5 @@
 # Core Pkgs
 import streamlit as st 
-'''
 import cv2
 
 from PIL import Image,ImageEnhance
@@ -154,9 +153,6 @@ def main():
 		st.text("Jesse E.Agbe(JCharis)")
 		st.success("Jesus Saves @JCharisTech")
 
-
-'''
-st.write("Teste")
 
 if __name__ == '__main__':
 		main()	
