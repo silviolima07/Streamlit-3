@@ -6,7 +6,7 @@ from PIL import Image,ImageEnhance
 import numpy as np 
 import os
 
-
+'''
 face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
 smile_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
@@ -152,6 +152,9 @@ def main():
 		st.markdown("Built with Streamlit by [JCharisTech](https://www.jcharistech.com/)")
 		st.text("Jesse E.Agbe(JCharis)")
 		st.success("Jesus Saves @JCharisTech")
+'''
+
+st.write("TESTE")
 
 
 if __name__ == '__main__':
