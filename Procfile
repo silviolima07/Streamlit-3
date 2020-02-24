@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run face.py
+web: sh setup.sh && streamlit run app.py
