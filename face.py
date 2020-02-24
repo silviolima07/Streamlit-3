@@ -10,7 +10,7 @@ import os
 face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
 smile_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
-
+'''
 def detect_faces(our_image):
 	new_img = np.array(our_image.convert('RGB'))
 	img = cv2.cvtColor(new_img,1)
@@ -21,7 +21,7 @@ def detect_faces(our_image):
 	for (x, y, w, h) in faces:
 				 cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 	return img,faces 
-'''
+
 
 def detect_eyes(our_image):
 	new_img = np.array(our_image.convert('RGB'))
@@ -86,6 +86,8 @@ def main():
 			# st.write(type(our_image))
 			st.image(our_image)
 
+'''
+
 		enhance_type = st.sidebar.radio("Enhance Type",["Original","Gray-Scale","Contrast","Brightness","Blurring"])
 		if enhance_type == 'Gray-Scale':
 			new_img = np.array(our_image.convert('RGB'))
@@ -117,7 +119,7 @@ def main():
 		else:
 			st.image(our_image,width=300)
 
-
+'''
 
 		# Face Detection
 		task = ["Faces","Smiles","Eyes","Cannize","Cartonize"]
@@ -127,6 +129,8 @@ def main():
 			if feature_choice == 'Faces':
 				result_img,result_faces = detect_faces(our_image)
 				st.image(result_img)
+
+'''
 
 				st.success("Found {} faces".format(len(result_faces)))
 			elif feature_choice == 'Smiles':
@@ -145,7 +149,7 @@ def main():
 			elif feature_choice == 'Cannize':
 				result_canny = cannize_image(our_image)
 				st.image(result_canny)
-
+''''
 
 
 
