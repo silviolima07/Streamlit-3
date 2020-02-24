@@ -21,7 +21,7 @@ def detect_faces(our_image):
 	for (x, y, w, h) in faces:
 				 cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 	return img,faces 
-'''
+
 
 def detect_eyes(our_image):
 	new_img = np.array(our_image.convert('RGB'))
@@ -65,7 +65,6 @@ def cannize_image(our_image):
 	canny = cv2.Canny(img, 100, 150)
 	return canny
 
-'''
 
 def main():
 	"""Face Detection App"""
