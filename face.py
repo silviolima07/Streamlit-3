@@ -1,6 +1,6 @@
 # Core Pkgs
 import streamlit as st 
-'''
+
 import cv2
 
 from PIL import Image,ImageEnhance
@@ -21,6 +21,8 @@ def detect_faces(our_image):
 	for (x, y, w, h) in faces:
 				 cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 	return img,faces 
+
+'''
 
 def detect_eyes(our_image):
 	new_img = np.array(our_image.convert('RGB'))
@@ -158,4 +160,4 @@ st.write("TESTE")
 
 
 if __name__ == '__main__':
-		main()	
+	main()	
