@@ -2,4 +2,3 @@ Pillow==7.0.0
 toml==0.10.0
 streamlit==0.53.0
 opencv-python==4.2.0.32
-python==3.6
