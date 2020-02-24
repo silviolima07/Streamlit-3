@@ -1,5 +1,10 @@
 import streamlit as st
 
-import cv2
+def main():
+    """ A simple iris EDA App """
 
-st.write("Hello world")
+    st.title("Iris EDA App with streamlit")
+    st.subheader("Streamlit is python server for web apps")
+
+if __name__ == '__main__':
+    main()
