@@ -4,7 +4,7 @@ import cv2
 from PIL import Image,ImageEnhance
 import numpy as np 
 import os
-
+'''
 face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
 smile_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
@@ -152,6 +152,8 @@ def main():
 		st.success("Jesus Saves @JCharisTech")
 
 
+'''
+st.write("Teste")
 
 if __name__ == '__main__':
 		main()	
