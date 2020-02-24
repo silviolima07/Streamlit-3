@@ -130,7 +130,7 @@ def main():
 				result_img,result_faces = detect_faces(our_image)
 				st.image(result_img)
 
-'''
+
 
 				st.success("Found {} faces".format(len(result_faces)))
 			elif feature_choice == 'Smiles':
@@ -149,7 +149,7 @@ def main():
 			elif feature_choice == 'Cannize':
 				result_canny = cannize_image(our_image)
 				st.image(result_canny)
-''''
+
 
 
 
