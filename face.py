@@ -10,7 +10,7 @@ import os
 face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
 smile_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
-'''
+
 def detect_faces(our_image):
 	new_img = np.array(our_image.convert('RGB'))
 	img = cv2.cvtColor(new_img,1)
@@ -65,7 +65,7 @@ def cannize_image(our_image):
 	canny = cv2.Canny(img, 100, 150)
 	return canny
 
-'''
+
 def main():
 	"""Face Detection App"""
 
@@ -149,7 +149,6 @@ def main():
 			elif feature_choice == 'Cannize':
 				result_canny = cannize_image(our_image)
 				st.image(result_canny)
-
 
 
 
