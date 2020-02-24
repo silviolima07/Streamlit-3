@@ -2,15 +2,15 @@
 import streamlit as st 
 
 import cv2
-'''
+
 from PIL import Image,ImageEnhance
 import numpy as np 
 import os
-'''
+
 face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
 smile_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
-'''
+
 def detect_faces(our_image):
 	new_img = np.array(our_image.convert('RGB'))
 	img = cv2.cvtColor(new_img,1)
@@ -21,7 +21,6 @@ def detect_faces(our_image):
 	for (x, y, w, h) in faces:
 				 cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 	return img,faces 
-'''
 '''
 
 def detect_eyes(our_image):
@@ -65,6 +64,8 @@ def cannize_image(our_image):
 	img = cv2.GaussianBlur(img, (11, 11), 0)
 	canny = cv2.Canny(img, 100, 150)
 	return canny
+
+'''
 
 def main():
 	"""Face Detection App"""
@@ -154,9 +155,6 @@ def main():
 		st.markdown("Built with Streamlit by [JCharisTech](https://www.jcharistech.com/)")
 		st.text("Jesse E.Agbe(JCharis)")
 		st.success("Jesus Saves @JCharisTech")
-'''
-
-st.write("TESTE")
 
 
 if __name__ == '__main__':
