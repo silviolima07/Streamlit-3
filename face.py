@@ -2,15 +2,15 @@
 import streamlit as st 
 
 import cv2
-
+'''
 from PIL import Image,ImageEnhance
 import numpy as np 
 import os
-
+'''
 face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
 smile_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
-
+'''
 def detect_faces(our_image):
 	new_img = np.array(our_image.convert('RGB'))
 	img = cv2.cvtColor(new_img,1)
@@ -21,7 +21,7 @@ def detect_faces(our_image):
 	for (x, y, w, h) in faces:
 				 cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 	return img,faces 
-
+'''
 '''
 
 def detect_eyes(our_image):
