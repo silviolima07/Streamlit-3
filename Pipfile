@@ -9,7 +9,6 @@ verify_ssl = true
 numpy = "==1.18.1"
 streamlit = "==0.56.0"
 toml = "==0.10.0"
-opencv-contrib-python = "*"
 opencv-python = "*"
 
 [requires]
