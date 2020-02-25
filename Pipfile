@@ -5,10 +5,14 @@ verify_ssl = true
 
 [dev-packages]
 
+
 [packages]
 streamlit = "*"
+sklearn = "*"
+heroku = "*"
 toml = "==0.10.0"
 opencv-python = "*"
+
 
 [requires]
 python_version = "3.6"
