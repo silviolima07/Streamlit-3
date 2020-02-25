@@ -3,3 +3,4 @@ streamlit==0.56.0
 toml==0.10.0
 opencv-contrib-python==4.1.2.30
 opencv-python==4.1.2.30
+python==3.6.9
