@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-opencv-python = "*"
 python3-opencv = "*"
 
 [requires]
