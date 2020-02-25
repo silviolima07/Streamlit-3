@@ -1,12 +1,5 @@
 numpy==1.18.1
-Pillow==7.0.0
-pkg-resources==0.0.0
-prometheus-client==0.7.1
-prompt-toolkit==3.0.3
-protobuf==3.11.3
 streamlit==0.56.0
-terminado==0.8.3
-testpath==0.4.4
 toml==0.10.0
 opencv-contrib-python==4.1.2.30
 opencv-python==4.1.2.30
