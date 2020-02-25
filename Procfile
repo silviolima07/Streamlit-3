@@ -1,2 +1,3 @@
 #web:  sh setup.sh && streamlit run --server.enableCORS false --server.port $PORT face.py
-web: gunicorn app:face
+web:  sh setup.sh && streamlit run face.py
+
