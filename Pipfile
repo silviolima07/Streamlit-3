@@ -8,7 +8,7 @@ verify_ssl = true
 [packages]
 streamlit = "==0.50.2" # era 56
 toml = "==0.10.0"
-opencv-python = "2.4.1"
+opencv-contrib-python = "*"
 
 [requires]
 python_version = "3.6"
