@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-streamlit = "==0.51.0" # era 56
+streamlit = "==0.50.0" # era 56, 51
 toml = "==0.10.0"
 opencv-python = "*"
 
