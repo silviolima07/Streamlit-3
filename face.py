@@ -5,7 +5,6 @@ import cv2
 
 #face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 #eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
-#smile_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
 
 
 def main():
