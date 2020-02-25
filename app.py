@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image,ImageEnhance
 import numpy as np 
 import os
-import cv2
+import cv2 # sem isso abriu a pagina ok
 
 def main():
     """ A simple iris EDA App """
